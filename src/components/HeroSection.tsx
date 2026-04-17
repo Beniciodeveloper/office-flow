@@ -1,7 +1,7 @@
 import { ArrowRight, Shield, Clock, TrendingUp } from "lucide-react";
-const heroImage = "/foto-oficial.jpg";
+const heroImage = "/foto-rodrigo.jpg";
 
-const WA_NUMBER = "5571983750521";
+const WA_NUMBER = "5571983753052";
 const WA_MSG = encodeURIComponent("Olá, gostaria de obter mais informações");
 const WA_LINK = `https://wa.me/${WA_NUMBER}?text=${WA_MSG}`;
 
@@ -46,7 +46,7 @@ const HeroSection = () => {
 
             <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-lg mx-auto lg:mx-0">
               O <span className="text-white font-semibold">Legal</span> cuida de toda a burocracia,
-              regularização, licenças e alvarás <br /> Para você focar no que realmente importa:{" "}
+              regularização, licenças e alvarás para você focar no que realmente importa:{" "}
               <span className="text-primary">clientes e estratégia.</span>
             </p>
 

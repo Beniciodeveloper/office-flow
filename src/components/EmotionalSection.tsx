@@ -1,6 +1,6 @@
 import { Phone, Clock, Building2, AlertCircle, HeartHandshake, CheckCircle2 } from "lucide-react";
 
-const WA_NUMBER = "5571983750521";
+const WA_NUMBER = "5571983753052";
 const WA_MSG = encodeURIComponent("Olá, gostaria de obter mais informações");
 const WA_LINK = `https://wa.me/${WA_NUMBER}?text=${WA_MSG}`;
 
@@ -22,10 +22,6 @@ const EmotionalSection = () => {
 
           {/* ── Right: Text (on mobile comes first) ── */}
           <div className="order-1 lg:order-2 space-y-6">
-            <div className="badge-premium inline-flex">
-              <HeartHandshake className="w-3 h-3 shrink-0" />
-              <span>Nós entendemos você</span>
-            </div>
 
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white leading-tight">
               A rotina de um{" "}
@@ -57,11 +53,6 @@ const EmotionalSection = () => {
               ))}
             </div>
 
-            <p className="text-sm bg-primary/5 p-4 rounded-xl border border-primary/15 text-white/60 italic">
-              O <span className="text-primary font-bold">Legal</span> existe para aliviar esse peso
-              e devolver qualidade ao seu atendimento.
-            </p>
-
             <a
               href={WA_LINK}
               target="_blank"
@@ -73,7 +64,13 @@ const EmotionalSection = () => {
           </div>
 
           {/* ── Left: Pain cards ── */}
-          <div className="order-2 lg:order-1 grid grid-cols-2 gap-4">
+          <div className="order-2 lg:order-1 flex flex-col space-y-6">
+            <div className="badge-premium inline-flex self-start">
+              <HeartHandshake className="w-3 h-3 shrink-0" />
+              <span>Nós entendemos você</span>
+            </div>
+
+            <div className="grid grid-cols-2 gap-4">
             {PAINS.map((pain, i) => (
               <div
                 key={i}
@@ -86,6 +83,12 @@ const EmotionalSection = () => {
                 <p className="text-sm font-bold text-destructive/90 leading-snug">{pain.text}</p>
               </div>
             ))}
+            </div>
+
+            <p className="text-sm bg-primary/5 p-4 rounded-xl border border-primary/15 text-white/60 italic">
+              O <span className="text-primary font-bold">Legal</span> existe para aliviar esse peso
+              e devolver qualidade ao seu atendimento.
+            </p>
           </div>
         </div>
       </div>

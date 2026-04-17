@@ -1,7 +1,7 @@
 import { CheckCircle2, Star, Users, FileCheck, TrendingDown, ArrowRight } from "lucide-react";
 import { useEffect, useState } from "react";
 
-const WA_NUMBER = "5571983750521";
+const WA_NUMBER = "5571983753052";
 const WA_MSG = encodeURIComponent("Olá, gostaria de obter mais informações");
 const WA_LINK = `https://wa.me/${WA_NUMBER}?text=${WA_MSG}`;
 

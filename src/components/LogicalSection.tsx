@@ -11,7 +11,7 @@ import {
   Trophy
 } from "lucide-react";
 
-const WA_NUMBER = "5571983750521";
+const WA_NUMBER = "5571983753052";
 const WA_MSG = encodeURIComponent("Olá, gostaria de obter mais informações");
 const WA_LINK = `https://wa.me/${WA_NUMBER}?text=${WA_MSG}`;
 

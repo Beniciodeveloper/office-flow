@@ -6,7 +6,7 @@ import {
   ArrowRight
 } from "lucide-react";
 
-const WA_NUMBER = "5571983750521";
+const WA_NUMBER = "5571983753052";
 const WA_MSG = encodeURIComponent("Olá, gostaria de saber como funciona o fluxo do Legal");
 const WA_LINK = `https://wa.me/${WA_NUMBER}?text=${WA_MSG}`;
 
@@ -37,7 +37,7 @@ const ProcessSection = () => {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {steps.map((step, i) => (
             <div key={i} className="glass-card p-8 group hover:border-primary/20 transition-all duration-300 relative overflow-hidden flex flex-col items-center text-center">
-              <span className="absolute -top-4 -right-2 text-7xl font-black text-white/[0.03] group-hover:text-primary/[0.05] transition-colors tabular-nums">
+              <span className="absolute -top-4 -right-2 text-7xl font-black text-white/[0.8] group-hover:text-primary/[0.05] transition-colors tabular-nums">
                 {step.number}
               </span>
               <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary transition-colors duration-300">
